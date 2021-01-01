@@ -1,0 +1,46 @@
+%%% Owner : GitWatin
+%%% Contact : github@valdenis.be
+%%% Licence : CC BY-NC-ND 4.0
+
+
+\documentclass[a4paper, 12pt]{article}
+
+%Import Packages 
+\include{bin/packages}
+% Import function page
+\include{bin/function}
+
+
+
+\title{\LaTeX template}
+\newcommand{\soustitre}{Sous Titre}
+\newcommand{\version}{1.0}
+\newcommand{\confidentialite}{Public} % Public/Internal/Restricted/Confidential
+\newcommand{\ReleaseDate}{N/A}
+
+\newcommand{\cours}{Cours}
+\newcommand{\cursus}{Cursus} % Master en sciences de l'ingénieur industriel
+
+\newcommand{\auteur}{Valentin \textsc{DENIS}}  %To add another name add \newline command between the name
+\newcommand{\teacher}{Prénom \textsc{NOM}}
+\newcommand{\academicyear}{2020 -- 2021}
+
+%================================================================================================
+
+
+\begin{document}
+
+\input{bin/document} 
+
+\begin{env_side}
+
+    %% Add at this place your chapter .tex files
+    \lipsum
+
+\end{env_side}
+
+%% Add bibliography if didn't want comment the
+\input{bib}
+
+\end{document}
+

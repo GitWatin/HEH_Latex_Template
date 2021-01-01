@@ -1,0 +1,36 @@
+\pagenumbering{arabic}
+% Import first page
+
+\include{src/flyleaf}
+%% Copyright page
+\include{bin/copyright}
+\thispagestyle{empty}
+
+%% Table of contents
+\tableofcontents
+\newpage
+\thispagestyle{empty}
+
+%% List of Figures
+\listoffigures
+\newpage
+\thispagestyle{empty}
+
+%% List of table
+\listoftables
+\newpage
+
+%% Footer Configuration
+\makeatletter
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[L]{\@title}
+\fancyhead[R]{\chaptername}
+\renewcommand{\headheight}{15pt}
+\fancyfoot[L]{\includegraphics[width=0.5\textwidth]{img/logo/footer.pdf}}
+\fancyfoot[CO]{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\footskip}{34pt}
+
+
+\newpage
