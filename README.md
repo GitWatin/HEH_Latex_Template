@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/github/v/release/GitWatin/HEH_Latex_Template" alt="Version">
   </a>
 
-  <a href="https://www.paypal.me/valentindenis target="blank" ">
+  <a href="https://www.paypal.me/valentindenis  " target="blank">
     <img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate">
   </a>
   </br>
@@ -59,7 +59,7 @@ To change the cover sheet and document information, change the variables in repo
 
 The template is hosted on overleaf. 
 
-<a href="https://www.overleaf.com/read/zwyqkzhqkkcy target="blank"">
+<a href="https://www.overleaf.com/read/zwyqkzhqkkcy " target="blank">
   <img src="https://img.shields.io/badge/Redirect%20to%20%3A-Overleaf%20Read--Only-green" alt="Overleaf_HEH">
  </a>
 
