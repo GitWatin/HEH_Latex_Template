@@ -43,7 +43,7 @@
 
 ## Requirements
 
-  ✔ Compiler >= XeLaTeX
+  ✔ Compiler : XeLaTeX
 
   ✔ TeX Live version : 2020</br>
 
