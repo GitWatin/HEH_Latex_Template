@@ -33,7 +33,7 @@
 </br>
 
 <h4 align="center"> HEH Latex Template </h4>
-<center>⚠️ Unofficial latex template for the computer engineering curriculum ⚠️</center>
+<p align="center">⚠️ Unofficial latex template for the computer engineering curriculum ⚠️</p>
 
 </p>
 </p>
