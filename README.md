@@ -59,7 +59,7 @@ To change the cover sheet and document information, change the variables in repo
 
 The template is hosted on overleaf. 
 
-<a href="https://www.heh.be">
+<a href="https://www.overleaf.com/read/zwyqkzhqkkcy">
   <img src="https://img.shields.io/badge/Redirect%20to%20%3A-Overleaf%20Read--Only-green" alt="Overleaf_HEH">
  </a>
 
