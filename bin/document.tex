@@ -20,13 +20,19 @@
 \listoftables
 \newpage
 
-%% Footer Configuration
+%% Footer/Header Configuration
 \makeatletter
+% Define page style
 \pagestyle{fancy}
+% Set headerline to 1pt
 \renewcommand\headrulewidth{1pt}
+% Set header configuration
 \fancyhead[L]{\@title}
+\fancyhead[CO]{}
 \fancyhead[R]{\chaptername}
+% Set footer size to 15pt
 \renewcommand{\headheight}{15pt}
+% Set Footer configuration
 \fancyfoot[L]{\includegraphics[width=0.5\textwidth]{img/logo/footer.pdf}}
 \fancyfoot[CO]{}
 \fancyfoot[R]{\thepage}
