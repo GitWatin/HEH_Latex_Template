@@ -4,8 +4,11 @@
 
 
 %% Copyright page
-\include{bin/copyright}
+\ifcopyright
+    \include{bin/copyright}
+\else 
 
+\fi
 
 %% Table of contents
 \thispagestyle{empty}
@@ -37,7 +40,12 @@
 % Set footer size to 15pt
 \renewcommand{\headheight}{15pt}
 % Set Footer configuration
-\fancyfoot[L]{\includegraphics[width=0.5\textwidth]{img/logo/footer.pdf}}
+\iffooter
+    \fancyfoot[L]{\includegraphics[width=0.5\textwidth]{img/logo/footer.pdf}}
+\else 
+    \fancyfoot[L]{}
+\fi
+
 \fancyfoot[CO]{}
 \fancyfoot[R]{\thepage}
 \renewcommand{\footskip}{34pt}

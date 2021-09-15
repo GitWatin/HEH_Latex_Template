@@ -10,6 +10,10 @@
 % Import function page
 \include{bin/function}
 
+% Change this parameter to display or not content
+\setboolean{copyright}{true}
+\setboolean{footer}{true}
+\setboolean{bibliography}{true}
 
 
 \title{\LaTeX template}
@@ -44,7 +48,10 @@
 \end{env_side}
 
 %% Add bibliography if didn't want comment the line
-\input{bib}
+\ifbibliography
+    \input{bib}
+\else 
+\fi
 
 \end{document}
 

@@ -1,6 +1,11 @@
 % ---------------- COLOR ----------------
 
 
+%---------- Boolean --------
+\newboolean{copyright}
+\newboolean{footer}
+\newboolean{bibliography}
+
 %% Command to redefine date fomat (DD-Month-YYY) Package datetime
 \renewcommand*{\thefilemoddate}[3]{\formatdate{#3}{#2}{#1}}
 
@@ -10,8 +15,13 @@
 
 
 %% Environment with footer and margin pictures
-\newenvironment{env_side}{\AtBeginPage{\side}}
-
+%% Environment with footer and margin pictures
+\newenvironment{env_side}{
+\iffooter
+    \AtBeginPage{\side}
+\else 
+\fi
+}
 
 %% Commande pour bannière
 \newcommand{\side}[1]
