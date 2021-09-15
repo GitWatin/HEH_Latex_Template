@@ -54,6 +54,7 @@ All images are vectorial (pdf)
 ## Variables 
 
 To change the cover sheet and document information, change the variables in report.tex
+To display or not copyright page, footer and bibliography change boolean state in report.tex 
 
 ## Hosting
 
