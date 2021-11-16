@@ -45,7 +45,7 @@
 
   ✔ Compiler : XeLaTeX
 
-  ✔ TeX Live version : 2020</br>
+  ✔ TeX Live version : 2020 & 2021</br>
 
 ## Images
 
