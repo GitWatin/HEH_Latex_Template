@@ -25,6 +25,7 @@
 \newcommand{\cursus}{Cursus} % Master en sciences de l'ingénieur industriel
 \newcommand{\teacher}{Prénom \textsc{NOM}}
 \newcommand{\auteur}{\href{www.valdenis.be}{Valentin \textsc{DENIS}}}  %To add another name add "\\" between the name
+\newcommand{\academicyear}{2020 -- 2021}
 
 
 
@@ -32,12 +33,10 @@
 \newcommand{\version}{1.0}
 \newcommand{\confidentialite}{Public} % Public/Internal/Restricted/Confidential
 \newcommand{\ReleaseDate}{N/A}
-\newcommand{\partner}{<Your Partner>}
+\newcommand{\partner}{<Your Partner>} %\href{www.heh.be}{Haute Ecole en Hainaut}
 \newcommand{\contact}{\href{mailto:hello@valdenis.be}{hello@valdenis.be}\\ }
 \newcommand{\keywords}{Keyword1; keyword2}
 
-
-\newcommand{\academicyear}{2020 -- 2021}
 
 %==========================================================================================
 
@@ -54,13 +53,16 @@
 \input{src/abstract}
 \input{src/introduction}
 
-\end{env_side}
+
+
 
 %% Add bibliography if didn't want set line 15 at False
 \ifbibliography
 \input{bib}
 \else 
 \fi
+
+\end{env_side}
 
 \end{document}
 
