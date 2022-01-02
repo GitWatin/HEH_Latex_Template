@@ -7,16 +7,13 @@
 % \usepackage{polyglossia} %% User XeLatex with this packages
 %\setdefaultlanguage{french}
     
-\usepackage[type={CC},modifier={by-nc-nd},version={4.0}]{doclicense}
-    % Package to add license
-
 \usepackage{graphicx}
     % Used for add images into file
 
 \usepackage{fancyhdr}
     % Used for the header and footer settings
 
-\usepackage{lastpage}
+\usepackage{totpages}
     % Page numbering
 
 \usepackage[export]{adjustbox}
@@ -39,6 +36,9 @@
 
 \usepackage{datetime} 
     % Set date format
+    
+\usepackage[type={CC},modifier={by-nc-nd},version={4.0}]{doclicense}
+    % Package to add license
 
 \usepackage[T1]{fontenc}
     % Encode file
@@ -46,11 +46,26 @@
 \usepackage{currfile}
     % For use macro to metadata
 
-\usepackage{amsmath}
-    % Packages for mathematic equation
-    
-\usepackage{amssymb}
-    % Packages for mathematic symbole
+\usepackage{amsmath,amssymb}
+    % Packages for mathematic equation and symbol
 
 \usepackage{xcolor,colortbl}
     % Package for color
+    
+\usepackage[hidelinks]{hyperref}
+    %package for href (if yoy want to show link color removo 'HideLinks" argument
+    
+\usepackage{enumitem}
+    %package to change aspect of itemize like : \begin{itemize}[label=\textbullet, font=\normalsize \color{redtechnology}]
+    
+\usepackage{nameref,titleref}
+    % Package to add section cross referencing automaticaly
+\usepackage{tabularx,booktabs}  
+    % Bast tab generator
+
+\usepackage{listings,minted}
+    % For code lighting
+
+
+%\usepackage{gensymb}
+    % to add \degree \textdegree symbol

@@ -2,10 +2,9 @@
 %%% Contact : github@valdenis.be
 %%% Licence : CC BY-NC-ND 4.0
 
-
 \documentclass[a4paper, 12pt]{article}
 
-%Import Packages 
+% Import Packages 
 \include{bin/packages}
 % Import function page
 \include{bin/function}
@@ -14,42 +13,50 @@
 \setboolean{copyright}{true}
 \setboolean{footer}{true}
 \setboolean{bibliography}{true}
+\setboolean{ListOfCode}{false}
 
+
+% FlyLeaf Parameter
 
 \title{\LaTeX template}
 \newcommand{\soustitre}{Sous Titre}
+\newcommand{\cours}{Cours}
+\newcommand{\cursus}{Cursus} % Master en sciences de l'ingénieur industriel
+\newcommand{\teacher}{Prénom \textsc{NOM}}
+\newcommand{\auteur}{\href{www.valdenis.be}{Valentin \textsc{DENIS}}}  %To add another name add "\\" between the name
+
+
+% Copyright Table parameter
 \newcommand{\version}{1.0}
 \newcommand{\confidentialite}{Public} % Public/Internal/Restricted/Confidential
 \newcommand{\ReleaseDate}{N/A}
 \newcommand{\partner}{<Your Partner>}
-
-\newcommand{\cours}{Cours}
-\newcommand{\cursus}{Cursus} % Master en sciences de l'ingénieur industriel
-
-\newcommand{\auteur}{\href{www.linkedin.valdenis.be}{Valentin \textsc{DENIS}}}  %To add another name add "\\" between the name
 \newcommand{\contact}{\href{mailto:hello@valdenis.be}{hello@valdenis.be}\\ }
-\newcommand{\teacher}{Prénom \textsc{NOM}}
+\newcommand{\keywords}{Keyword1; keyword2}
+
+
 \newcommand{\academicyear}{2020 -- 2021}
 
-%================================================================================================
-
+%==========================================================================================
 
 \begin{document}
 
-
-
+%Add config template files
 \input{bin/document} 
 
+% Begin environnement for lateral banner
 \begin{env_side}
 
-    %% Add at this place your chapter .tex files
-    \lipsum
+%% Add at this place your chapter .tex files
+
+\input{src/abstract}
+\input{src/introduction}
 
 \end{env_side}
 
-%% Add bibliography if didn't want comment the line
+%% Add bibliography if didn't want set line 15 at False
 \ifbibliography
-    \input{bib}
+\input{bib}
 \else 
 \fi
 

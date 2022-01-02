@@ -27,6 +27,19 @@
 \listoftables
 \newpage
 
+%% List of codes
+\ifListOfCode
+\thispagestyle{empty}
+\renewcommand\listoflistingscaption{Liste des codes}
+\renewcommand\listingscaption{Codes}
+\listoflistings
+\newpage
+\else 
+\fi
+
+
+%======== Footer configuration =======
+
 %% Footer/Header Configuration
 \makeatletter
 % Define page style
@@ -49,6 +62,5 @@
 \fancyfoot[CO]{}
 \fancyfoot[R]{\thepage}
 \renewcommand{\footskip}{34pt}
-
 
 \newpage
