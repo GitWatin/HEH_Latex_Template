@@ -13,6 +13,7 @@
 \setboolean{copyright}{true}
 \setboolean{footer}{true}
 \setboolean{bibliography}{true}
+\setboolean{ListOfCode}{true}
 
 
 % FlyLeaf Parameter
@@ -31,6 +32,7 @@
 \newcommand{\ReleaseDate}{N/A}
 \newcommand{\partner}{<Your Partner>}
 \newcommand{\contact}{\href{mailto:hello@valdenis.be}{hello@valdenis.be}\\ }
+\newcommand{\keywords}{Keyword1; keyword2}
 
 
 \newcommand{\academicyear}{2020 -- 2021}
@@ -46,7 +48,9 @@
 \begin{env_side}
 
 %% Add at this place your chapter .tex files
-\lipsum
+
+\input{src/abstract}
+\input{src/introduction}
 
 \end{env_side}
 
@@ -57,3 +61,4 @@
 \fi
 
 \end{document}
+

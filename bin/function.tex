@@ -7,16 +7,16 @@
 \newboolean{copyright}
 \newboolean{footer}
 \newboolean{bibliography}
+\newboolean{ListOfCode}
+
 
 %% Command to redefine date fomat (DD-Month-YYY) Package datetime
 \renewcommand*{\thefilemoddate}[3]{\formatdate{#3}{#2}{#1}}
-
 
 %% Environment for cover sheat
 \newenvironment{vc}{\topskip0pt\vspace*{\fill}\noindent\ignorespaces}{\strut\vfill}
 
 
-%% Environment with footer and margin pictures
 %% Environment with footer and margin pictures
 \newenvironment{env_side}{
 \iffooter
@@ -33,9 +33,13 @@
         \includegraphics[width=0.5\marginparwidth]{img/logo/marge.pdf}
     \end{marginfigure}
 }
+%% Bloc pour recuperer le current section name
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+%https://tex.stackexchange.com/questions/75168/get-current-section-name-without-label
+\makeatother
 
-
-%% Commande pour modifier profondeur de la table des matières
+%% Commande pour modifier l'affichage de la profondeur de la table des matières
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{4}
 
