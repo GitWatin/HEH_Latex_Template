@@ -45,7 +45,7 @@
 
   ✔ Compiler : XeLaTeX
 
-  ✔ TeX Live version : 2020</br>
+  ✔ TeX Live version : 2020 & 2021</br>
 
 ## Images
 
@@ -55,7 +55,7 @@ All images are vectorial (pdf)
 
 To change the cover sheet and document information, change the variables in report.tex.
 
-To display or not copyright page, footer and bibliography change boolean state in report.tex.
+To display or not copyright page,ListofCode, footer and bibliography change boolean state in report.tex.
 
 ## Hosting
 
