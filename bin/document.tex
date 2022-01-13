@@ -1,3 +1,7 @@
+%%% Owner : GitWatin
+%%% Contact : github@valdenis.be
+%%% Licence : CC BY-NC-ND 4.0
+
 \pagenumbering{arabic}
 % Import flyleaf
 \include{src/flyleaf}
@@ -22,9 +26,12 @@
 
 
 %% List of table
+\ifListOfTables
 \thispagestyle{empty}
 \listoftables
 \newpage
+\else
+\fi
 
 %% List of codes
 \ifListOfCode
